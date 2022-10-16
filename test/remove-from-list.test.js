@@ -21,19 +21,19 @@ function convertArrayToList(arr) {
 describe('Remove from list', () => {
   it.optional('should return the list without values equal to k', () => {
     const initial = convertArrayToList([3, 1, 2, 3, 4, 5]);
-    const expected = convertArrayToList([1, 2, 4, 5]);
+    const expected = convertArrayToList([1, 2, 4, 5]);    
     assert.deepEqual(removeKFromList(initial, 3), expected);
   });
 
   it.optional('should return the list without values equal to k (with double k)', () => {
     const initial = convertArrayToList([1, 2, 3, 3, 4, 5]);
-    const expected = convertArrayToList([1, 2, 4, 5]);
+    const expected = convertArrayToList([1, 2, 4, 5]);   
     assert.deepEqual(removeKFromList(initial, 3), expected);
   });
 
   it.optional('should return the list without values equal to k (with k at the end)', () => {
     const initial = convertArrayToList([1, 2, 3]);
-    const expected = convertArrayToList([1, 2]);
+    const expected = convertArrayToList([1, 2]); 
     assert.deepEqual(removeKFromList(initial, 3), expected);
   });
 });
